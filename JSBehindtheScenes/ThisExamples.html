@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        name: "Rakshit",
+        greet: function () {
+          console.log(`hello ${this.name}`);
+          return "";
+        },
+      };
+      let anotherPerson = {
+        name: "Hemanth",
+      };
+
+      anotherPerson.greet = person.greet;
+
+      console.log(person.greet());
+      console.log(anotherPerson.greet());
+
+      // The same function is invoked by two different objects.
+      // Therefore, `this` refers to the object that invoked the function.
+
+      // NOTE
+      // what if ther  is no Object to invoke
+
+      function sayHello() {
+        let myName = "Ram";
+        console.log(this.myName);
+      }
+      sayHello.myName = "Rakshit";
+      console.log(sayHello());
+
+      // when there is no object to invoke inside the browser this refer to window object and this .name will window.name which dont have myNmae so unefined
+    </script>
+  </body>
+</html>
