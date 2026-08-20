@@ -19,6 +19,7 @@ const brunoDogAges = [16, 6, 10, 5, 6, 1, 4];
 // calculateHumanAges(juliesDogAges);
 // calculateHumanAges(brunoDogAges);
 
+// do this with
 const calculateHumanAges = (arr) => {
   const averageAge = arr
     .map((age) => (age <= 2 ? 2 * age : 16 + age * 4))
