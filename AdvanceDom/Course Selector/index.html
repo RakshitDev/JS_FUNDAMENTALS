@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Course Selector</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="course-app">
+      <div class="course-container">
+        <button class="course-btn course-btn--active" data-course="javascript">
+          JavaScript
+        </button>
+
+        <button class="course-btn" data-course="react">React</button>
+
+        <button class="course-btn" data-course="node">Node.js</button>
+      </div>
+
+      <div
+        class="course-content course-content--javascript course-content--active"
+      >
+        <h2>JavaScript</h2>
+        <p>Learn the fundamentals of JavaScript.</p>
+      </div>
+
+      <div class="course-content course-content--react">
+        <h2>React</h2>
+        <p>Build modern user interfaces with React.</p>
+      </div>
+
+      <div class="course-content course-content--node">
+        <h2>Node.js</h2>
+        <p>Build backend applications using Node.js.</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
