@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background: #f4f6f8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px;
+}
+
+.theme-app {
+  width: 100%;
+  max-width: 700px;
+}
+
+/* ------------------------- */
+/* Theme selector */
+/* ------------------------- */
+
+.theme-container {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.theme-container h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+
+.theme-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.theme-btn {
+  border: none;
+  padding: 14px 25px;
+
+  border-radius: 10px;
+
+  background: #eee;
+  color: #333;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+  transform: translateY(-3px);
+  background: #ddd;
+}
+
+.theme-btn--active {
+  background: #222;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* ------------------------- */
+/* Content */
+/* ------------------------- */
+
+.theme-content {
+  display: none;
+
+  margin-top: 25px;
+
+  padding: 50px 30px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+  animation: fadeIn 0.4s ease;
+}
+
+.theme-content--active {
+  display: block;
+}
+
+.theme-content .icon {
+  font-size: 50px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.theme-content h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.theme-content p {
+  font-size: 17px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Different content backgrounds */
+
+.theme-content--light {
+  background: #fff;
+}
+
+.theme-content--dark {
+  background: #222;
+  color: white;
+}
+
+.theme-content--dark p {
+  color: #bbb;
+}
+
+.theme-content--blue {
+  background: #dff4ff;
+  color: #075985;
+}
+
+.theme-content--blue p {
+  color: #176589;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+
+  .theme-container {
+    padding: 25px 15px;
+  }
+
+  .theme-buttons {
+    flex-direction: column;
+  }
+
+  .theme-btn {
+    width: 100%;
+  }
+}

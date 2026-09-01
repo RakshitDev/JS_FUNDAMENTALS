@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 40px;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+      }
+
+      /* Fruit buttons */
+      #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-bottom: 80px;
+      }
+
+      #container button {
+        padding: 12px 25px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        background: white;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+        transition: transform 0.2s;
+      }
+
+      #container button:hover {
+        transform: translateY(-3px);
+      }
+
+      /* Cart */
+      #cart {
+        width: 500px;
+        margin: 0 auto;
+        padding: 25px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .product {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px;
+        margin-bottom: 15px;
+        background: #f8f8f8;
+        border-radius: 8px;
+      }
+
+      .product:last-child {
+        margin-bottom: 0;
+      }
+
+      .product span {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .delete {
+        padding: 8px 15px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        background: #ddd;
+      }
+
+      .delete:hover {
+        background: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <button class="btn-apple">Apple</button>
+      <button class="btn-banana">Banana</button>
+      <button class="btn-mango">Mango</button>
+    </div>
+
+    <div id="cart">
+      <div class="product">
+        <span>iPhone</span>
+        <button class="delete">Delete</button>
+      </div>
+
+      <div class="product">
+        <span>MacBook</span>
+        <button class="delete">Delete</button>
+      </div>
+
+      <div class="product">
+        <span>AirPods</span>
+        <button class="delete">Delete</button>
+      </div>
+    </div>
+    <script src="Bubbleing.js"></script>
+  </body>
+</html>

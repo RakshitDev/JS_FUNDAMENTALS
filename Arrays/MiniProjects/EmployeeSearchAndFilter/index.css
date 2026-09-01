@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.employee-container {
+  width: 600px;
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+
+.employee-heading {
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Search */
+
+.search-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.Search-input {
+  flex: 1;
+  padding: 12px 15px;
+  border: 1px solid #d0d5da;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+}
+
+.Search-input:focus {
+  border-color: #333;
+}
+
+/* Search button */
+
+.search-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background: #444;
+}
+
+/* Filter */
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.filter-container label {
+  font-weight: 600;
+}
+
+#role {
+  padding: 10px 12px;
+  border: 1px solid #d0d5da;
+  border-radius: 8px;
+  background: white;
+  font-size: 15px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Employee cards */
+
+.displayContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.employee-card {
+  padding: 18px;
+  border: 1px solid #e0e3e7;
+  border-radius: 12px;
+  background: #fafafa;
+  transition: 0.2s ease;
+}
+
+.employee-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.employee-card p {
+  margin-bottom: 7px;
+}
+
+.employee-card p:last-child {
+  margin-bottom: 0;
+}
+
+.employeeName {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.employeeSalary {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.employeeDesignation {
+  font-size: 14px;
+  color: #666;
+}

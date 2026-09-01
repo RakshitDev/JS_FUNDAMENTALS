@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="shopping-container">
+        <h2 class="shopping-heading">Shopping Store</h2>
+
+        <!-- Search -->
+        <div class="search-container">
+          <input
+            type="text"
+            class="Search-input"
+            placeholder="Search products..."
+          />
+
+          <button class="search-btn">Search</button>
+        </div>
+
+        <!-- Filters -->
+        <div class="filter-container">
+          <div class="category-container">
+            <label for="category">Category:</label>
+
+            <select id="category">
+              <option value="all">All</option>
+              <option value="electronics">Electronics</option>
+              <option value="furniture">Furniture</option>
+              <option value="stationery">Stationery</option>
+            </select>
+          </div>
+
+          <div class="sort-container">
+            <label for="sort">Sort:</label>
+
+            <select id="sort">
+              <option value="default">Default</option>
+              <option value="low-high">Price: Low → High</option>
+              <option value="high-low">Price: High → Low</option>
+              <option value="name">Name: A → Z</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content-container">
+          <!-- Products -->
+          <div class="products-container">
+            <h3>Products</h3>
+
+            <div class="product-list"></div>
+          </div>
+
+          <!-- Cart -->
+          <div class="cart-container">
+            <h3>Cart (<span class="cart-count">0</span>)</h3>
+
+            <div class="cart-list"></div>
+
+            <div class="cart-total">
+              Total: ₹<span class="total-price">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

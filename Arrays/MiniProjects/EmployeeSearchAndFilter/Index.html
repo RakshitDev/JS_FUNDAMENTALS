@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Employee Search</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <div class="employee-container">
+        <h2 class="employee-heading">Employees</h2>
+
+        <!-- Search -->
+        <div class="search-container">
+          <input type="text" class="Search-input" placeholder="Employee Name" />
+
+          <button class="search-btn">Search</button>
+        </div>
+
+        <!-- Role Filter -->
+        <div class="filter-container">
+          <label for="role">Role:</label>
+
+          <select id="role">
+            <option value="all">All</option>
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="tester">Tester</option>
+          </select>
+        </div>
+
+        <!-- Employee Display -->
+        <div class="displayContainer"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
